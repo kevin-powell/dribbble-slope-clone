@@ -6,7 +6,7 @@ More of a proof of concept than anything else 😅.
 
 ## The video
 
-You can [watch me code this in this video]().
+You can [watch me code this in this video](https://youtu.be/fpRqQkApeFk).
 
 ## The background video
 
