@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Slopes</title>
+</head>
+
+<body>
+  <div class="main-grid">
+    <div>
+      <p class="logo">SLOPES</p>
+      <p class="text-subdued">copyright here 2022</p>
+    </div>
+    <div class="stack">
+      <header class="flex-row justify-content-space-between">
+        <button aria-controls='nav-grid' aria-expanded="false" class="menu-toggle">Menu</button>
+        <nav class="primary-nav">
+          <ul class="nav-list flex-row" style="--gap: 3rem">
+            <li>Lorem</li>
+            <li>Quod</li>
+            <li>A</li>
+            <li>Laborum</li>
+          </ul>
+        </nav>
+      </header>
+      <div id="nav-grid" class="nav-grid grid-even-columns align-content-center">
+        <div>
+          <h3>Lorem.</h3>
+          <ul>
+            <li>Lorem.</li>
+            <li>Autem?</li>
+            <li>Laborum!</li>
+            <li>Impedit?</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Esse.</h3>
+          <ul>
+            <li>Lorem.</li>
+            <li>Autem?</li>
+            <li>Laborum!</li>
+            <li>Impedit?</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Recusandae.</h3>
+          <ul>
+            <li>Lorem.</li>
+            <li>Autem?</li>
+            <li>Laborum!</li>
+            <li>Impedit?</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Veniam?</h3>
+          <ul>
+            <li>Lorem.</li>
+            <li>Autem?</li>
+            <li>Laborum!</li>
+            <li>Impedit?</li>
+          </ul>
+        </div>
+      </div>
+      <div class="content-grid  align-content-center">
+        <main class="grid-70-30">
+          <div>
+            <h1>
+              Get fit to hit the slopes - winter in Sweden
+            </h1>
+          </div>
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur a molestiae, aspernatur atque delectus
+              fugiat enim deserunt beatae corrupti quas et error nam optio illum labore tempore sequi recusandae quia!
+            </p>
+            <a class="button" href="#">Send request</a>
+          </div>
+        </main>
+      </div>
+
+      <footer>Social links</footer>
+
+      <div class="content-grid-bg">
+      </div>
+      <div class="nav-grid-bg"></div>
+
+      <div class="video-bg">
+        <video autoplay muted loop src="video-bg.mp4"></video>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mainGrid = document.querySelector('.main-grid');
+
+    menuToggle.addEventListener('click', () => {
+      mainGrid.toggleAttribute('data-big-nav-open');
+      const menuState = menuToggle.getAttribute('aria-expanded');
+      if (menuState == 'false') {
+        menuToggle.setAttribute('aria-expanded', true);
+      } else {
+        menuToggle.setAttribute('aria-expanded', false);
+      }
+    })
+  </script>
+</body>
+
+</html>
